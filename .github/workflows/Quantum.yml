@@ -17,13 +17,12 @@ jobs:
     strategy:
       fail-fast: true
      
-permissions:
+    permissions:
       actions: read
       contents: read
       security-events: write
  
-      
-    steps:
+steps: 
     - uses: actions/checkout@v3
           
     - name: Run Microsoft Security DevOps
