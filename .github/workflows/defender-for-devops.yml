@@ -43,8 +43,15 @@ jobs:
       id: msdo
     - name: Upload alerts to Security tab
         uses: github/codeql-action/upload-sarif@v3
+ Check failure on line 45 in .github/workflows/defender-for-devops.yml
+
+
+GitHub Actions
+/ .github/workflows/defender-for-devops.yml
+Invalid workflow file
+
+You have an error in your yaml syntax on line 45
      with:
     sarif_file: ${{ steps.msdo.outputs.sarifFile }}
   env:
     GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-
